@@ -1,38 +1,36 @@
-.App {
-  text-align: center;
+:root {
+	--primary-orange: #e94560;
+	--primary-green: #519872;
+	--primary-blue1: #0f3460;
+	--primary-blue2: #16213e;
+	--primary-blue3: #1a1a2e;
+	--primary-white: #fff;
+	--primary-transparent: rgba(255, 255, 255, 0);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/*********** NAVBAR ***********/
+
+/* ------ menu links ------- */
+nav.navbar.navbar-dark {
+	background-color: var(--primary-blue2);
+}
+nav ul li.nav-item a.nav-link {
+	text-transform: uppercase;
+	font-weight: 300;
+	letter-spacing: 0.0375rem;
+	cursor: default;
+}
+nav.navbar ul li.nav-item {
+	border-bottom: solid 0.1875rem var(--primary-transparent);
+}
+nav.navbar ul li.nav-item:hover {
+	border-bottom: solid 0.1875rem var(--primary-orange);
+}
+nav.navbar ul li.nav-item:active {
+	border-bottom: solid 0.1875rem var(--primary-green);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/*----- toggler button ------- */
+nav.navbar div button.navbar-toggler {
+	margin-right: 1.875rem;
 }
